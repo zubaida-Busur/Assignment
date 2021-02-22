@@ -1,22 +1,25 @@
 import java.util.Scanner;
 public class Assignment {
 
-    public static void main(String[] args)
-    {
-        Scanner in=new Scanner(System.in);
-         int i,numbers=0, sum=0;
-         double avg;
-        System.out.println("enter any 5 numbers");
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        System.out.println("enter a number");
+        int n = in.nextInt();
 
-        for( i=0; i<5; i++){
-            numbers=in.nextInt();
-            sum=sum+numbers;
+
+        if (n < 0)
+        {
+            System.out.println("number is negative");
         }
-        avg=sum/5;
-        System.out.println("the sum of 5 no is:"+sum+ "\n average is:"+avg);
+          else if (n > 0) {
+            System.out.println("number is positive");
+
+        } else {
+
+            System.out.println("number is zero");
+        }
+
 
     }
-
-
-    }
+}
 
