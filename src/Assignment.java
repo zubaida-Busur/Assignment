@@ -2,21 +2,26 @@ import java.util.Scanner;
 public class Assignment {
 
     public static void main(String[] args) {
-        int x = 12;
-        int y = 13;
-        int  z = 18;
-        int minimum = min(12, 13, 18);
-        System.out.println(minimum);
+
+
+        Scanner in = new Scanner(System.in);
+        System.out.print("Input a year: ");
+        int year = in.nextInt();
+
+        boolean leapyear = leap( year);
+        System.out.println(leapyear);
 
     }
 
 
-        public static int min(int  x, int  y, int  z)
+        public static boolean leap(int year)
         {
 
-            int s=Math.min(x,y);
-            s=Math.min(s,z);
-            return s;
+           if((year%4)==0)
+               return true;
+           else
+               return false;
+
         }
 
 
