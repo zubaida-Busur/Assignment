@@ -4,20 +4,23 @@ public class Assignment {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         System.out.println("enter a number");
-        int n = in.nextInt();
+        int num1 = in.nextInt();
+        int num2 = in.nextInt();
+        int num3 = in.nextInt();
+
+        if(num1>num2)
+             if(num1>num3)
+                System.out.println("the greatest is" +num1);
+             if(num2>num1)
+             if(num2>num3)
+                System.out.println("the greatest no is" +num2);
+            if(num3>num1)
+            if(num3>num2)
+                System.out.println("the greatest no is" +num3);
 
 
-        if (n < 0)
-        {
-            System.out.println("number is negative");
-        }
-          else if (n > 0) {
-            System.out.println("number is positive");
 
-        } else {
 
-            System.out.println("number is zero");
-        }
 
 
     }
