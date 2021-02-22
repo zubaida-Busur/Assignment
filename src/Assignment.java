@@ -2,19 +2,21 @@ import java.util.Scanner;
 public class Assignment {
 
     public static void main(String[] args) {
-        double x = 12.5;
-        double y = 13.6;
-        double z = 18.9;
-        double findavg = average(12.5, 13.6, 18.9);
-        System.out.println(findavg);
+        int x = 12;
+        int y = 13;
+        int  z = 18;
+        int minimum = min(12, 13, 18);
+        System.out.println(minimum);
 
     }
 
 
-        public static double average(double x, double y, double z)
+        public static int min(int  x, int  y, int  z)
         {
-            double avg=(x + y + z) / 3;
-            return avg;
+
+            int s=Math.min(x,y);
+            s=Math.min(s,z);
+            return s;
         }
 
 
