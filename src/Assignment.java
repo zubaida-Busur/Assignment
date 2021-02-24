@@ -3,25 +3,43 @@ public class Assignment {
 
     public static void main(String[] args) {
 
-        double a = 5.5, b = 98.7, c = 5.6;
+        Scanner in = new Scanner(System.in);
 
-       calculateRoots(a,b,c);
+        System.out.println("enter 1st numbers:");
+        int m = in.nextInt();
+
+        System.out.println("enter 2nd numbers:");
+        int n = in.nextInt();
+        System.out.println("enter operator");
+        char operator = in.next().charAt(0);
+
+        //calling the FUNCTION void
+        calculator(m,n,operator);
 
     }
-    public static void calculateRoots(double a,double b,double c)
-    {
-        double root1, root2;
-        double determinant = b * b - 4 * a * c;
-        if(determinant > 0){
-            root1 = (-b + Math.sqrt(determinant));
-            root2 = (-b - Math.sqrt(determinant));
-            System.out.println("root1=\t" +root1+ "\t root2=\t" +root2);
-        }
-        else if (determinant==0){
-            root1 = -b/(2*a);
-            System.out.println(+root1);
+    public static void calculator(int m, int n,  char operator ) {
 
+
+        double result;
+
+        switch (operator) {
+            case '+':
+                result = m + n;
+                System.out.println("result:" + result);
+                break;
+            case '-':
+                result = m - n;
+                System.out.println("result:" + result);
+                break;
+            case '*':
+                result = m * n;
+                System.out.println("result:" + result);
+                break;
+            case '/':
+                result = m / n;
+                System.out.println("result:" + result);
+                break;
         }
     }
+    }
 
-}
