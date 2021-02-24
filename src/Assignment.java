@@ -2,13 +2,14 @@ import java.util.Scanner;
 public class Assignment {
 
     public static void main(String[] args) {
-         int [] arr = new int[]{1, 2,3,4,5};
-         int sum=0;
+         double [] arr = new double[]{12.5, 25.0,39.7,46.2,59.8};
+         double total = 0;
 
         for (int i = 0; i < arr.length; i++) {
-            sum= sum + arr[i];
+            total= total + arr[i];
         }
-        System.out.println("sum of array:" +sum);
+        double average=total / arr.length;
+        System.out.println("average is:" +average);
     }
 }
 
