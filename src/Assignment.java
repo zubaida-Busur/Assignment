@@ -2,34 +2,13 @@ import java.util.Scanner;
 public class Assignment {
 
     public static void main(String[] args) {
+         int [] arr = new int[]{1, 2,3,4,5};
+         int sum=0;
 
-
-        Scanner in = new Scanner(System.in);
-        System.out.print("Input a year: ");
-        int year = in.nextInt();
-
-        boolean leapyear = leap( year);
-        System.out.println(leapyear);
-
-    }
-
-
-        public static boolean leap(int year)
-        {
-
-           if((year%4)==0)
-               return true;
-           else
-               return false;
-
+        for (int i = 0; i < arr.length; i++) {
+            sum= sum + arr[i];
         }
-
-
-
-
-
-
-
-
+        System.out.println("sum of array:" +sum);
+    }
 }
 
