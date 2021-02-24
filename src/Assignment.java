@@ -2,14 +2,23 @@ import java.util.Scanner;
 public class Assignment {
 
     public static void main(String[] args) {
-         double [] arr = new double[]{12.5, 25.0,39.7,46.2,59.8};
-         double total = 0;
 
-        for (int i = 0; i < arr.length; i++) {
-            total= total + arr[i];
+        int[] contain = {55, 45, 90, 85, 31};
+
+        int num=90;
+        boolean check=contains(contain , num);
+        System.out.println(check);
+
+            }
+
+
+
+    public static boolean contains(int[] contain, int num) {
+        for (int i = 0; i < contain.length; i++) {
+            if (num == contain[i])
+                return true;
         }
-        double average=total / arr.length;
-        System.out.println("average is:" +average);
+        return false;
     }
-}
 
+}
