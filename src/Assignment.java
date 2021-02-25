@@ -21,9 +21,12 @@ public class Assignment {
         System.out.println(toy.getpass());
         System.out.println(tooyo.getpass());
         Calculator fx99 = new Calculator(12,18);
-        int result;
-
         System.out.println(fx99.getpass());
+        System.out.println(fx99.getsub());
+        System.out.println(fx99.getmul());
+        System.out.println(fx99.getdiv());
+
+
 
 
 
