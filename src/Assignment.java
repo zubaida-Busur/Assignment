@@ -18,6 +18,13 @@ public class Assignment {
         Vehicle toy=new Vehicle();
         Vehicle tooyo=new Vehicle(3,"red");
 
+        //Class PullRequest has a static method... i dont need an object to call it.. Just call it using the class name
+        PullRequest.whatIsAPullRequest();
+
+        //But the class has another method which is not static... i need an object to access it
+        PullRequest myExample = new PullRequest();
+        myExample.anotherInfoPullRequest();
+
         System.out.println(toy.getpass());
         System.out.println(tooyo.getpass());
         Calculator fx99 = new Calculator(12,18);
